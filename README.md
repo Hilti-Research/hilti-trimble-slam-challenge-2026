@@ -60,7 +60,7 @@ The winning teams will be awarded a prize money, so stay tuned for the full rele
 # Dataset
 The goal of this challenge is to accurately localize the [camera](#camera-visual-inertial-sensor) within the provided floorplans [as described below](#openvins-example).
 
-We are providing 5 samples for a early release (released 1st of December 2026). You can find the public folder [here](https://drive.google.com/drive/folders/19ajbmr7ByWxHiy1X4yqK8W02xUmePGLd?usp=drive_link) or you can directly download the rosbag from the table below: 
+We are providing 5 samples for a early release (released 1st of December 2025). You can find the public folder [here](https://drive.google.com/drive/folders/19ajbmr7ByWxHiy1X4yqK8W02xUmePGLd?usp=drive_link) or you can directly download the rosbag from the table below: 
 | Youtube Video | Rosbag Download | Ground Truth |
 | :---: | :---: | :---: |
 | [Floor_1_2025_05_05_run_1](https://youtu.be/CWM42dc7BLE) | [rosbag.db3](https://drive.google.com/file/d/1PT5qK7UpsAtU02QCTkAB1Tlvzt9k_16-/view?usp=drive_link) | <img src="https://github.com/Hilti-Research/hilti-trimble-slam-challenge-2026-internal/blob/pipeline/GT_plots_early_release/floor_1_gt.png" alt="GT Floor 1" width="400"/> |
