@@ -3,9 +3,6 @@
 
   <arg name="filename" default="floor_1.png" description="Short Filename" />
 
-
-  <arg name="folder" default="/media/mfallon/reddrive/hilti/Early_Release/BuchsIT/floorplans/" description="Folder with Floorplans" />
-
   <node name="map_server" pkg="challenge_tools_ros" exec="map_server.py" 
         output="screen"
         args="$(find-pkg-share challenge_tools_ros)/floorplans/$(var filename) 0" />

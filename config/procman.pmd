@@ -46,6 +46,28 @@ group "4.floorplan_map_server" {
     }
 }
 
+group "5.groundtruth_server" {
+    cmd "gt_floor_1_2025-05-05_run_1" {
+        exec = "ros2 launch challenge_tools_ros groundtruth_server.launch run_name:=floor_1_2025-05-05_run_1";
+        host = "localhost";
+    }
+    cmd "gt_floor_2_2025-05-05_run_1" {
+        exec = "ros2 launch challenge_tools_ros groundtruth_server.launch run_name:=floor_2_2025-05-05_run_1";
+        host = "localhost";
+    }
+    cmd "gt_floor_2_2025-10-28_run_1" {
+        exec = "ros2 launch challenge_tools_ros groundtruth_server.launch run_name:=floor_2_2025-10-28_run_1";
+        host = "localhost";
+    }
+    cmd "gt_floor_2_2025-10-28_run_2" {
+        exec = "ros2 launch challenge_tools_ros groundtruth_server.launch run_name:=floor_2_2025-10-28_run_2";
+        host = "localhost";
+    }
+    cmd "gt_floor_UG_2025-10-16_run_1" {
+        exec = "ros2 launch challenge_tools_ros groundtruth_server.launch run_name:=floor_UG_2025-10-16_run_1";
+        host = "localhost";
+    }
+}
 
 group "5.misc" {
     cmd "rotate_tool" {

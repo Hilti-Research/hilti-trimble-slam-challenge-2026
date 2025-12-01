@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<launch>
+
+<!--
+"floor_1_2025-05-05_run_1"
+"floor_2_2025-05-05_run_1"
+"floor_2_2025-10-28_run_1"
+"floor_2_2025-10-28_run_2"
+"floor_UG_2025-10-16_run_1"
+-->
+  <arg name="run_name" default="floor_1_2025-05-05_run_1" description="Directory with GT file" />
+
+
+  <node name="groundtruth_server" pkg="challenge_tools_ros" exec="groundtruth_server.py" 
+        output="screen"
+        args="$(var run_name)" />
+
+
+</launch>
