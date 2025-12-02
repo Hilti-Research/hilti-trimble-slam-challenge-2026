@@ -7,7 +7,7 @@
   Hilti x Trimble SLAM Challenge 2026
 </h1>
 
-- [Introduction](#introduction)
+- [Introduction: Visual-Inertial SLAM Challenge with Additional Building Floorplans](#introduction)
 - [Dataset](#dataset)
    * [Dataset Properties](#dataset-properties)
    * [Environment Description](#environment-description)
@@ -27,7 +27,7 @@
    * [Stella-VSLAM Example](#stella-vslam-example)
 
 <!-- TOC --><a name="introduction"></a>
-# Introduction
+# Introduction: Visual-Inertial SLAM Challenge with Additional Building Floorplans
 
 Accurate and reliable SLAM is a cornerstone of robotics, automation, and digital construction workflows. Yet real-world construction sites remain one of the most challenging environments for modern Visual-Inertial SLAM systems: changing lighting conditions, repetitive textures and partial building progress push even state-of-the-art algorithms to their limits.
 
