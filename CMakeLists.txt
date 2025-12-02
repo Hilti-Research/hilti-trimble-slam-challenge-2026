@@ -41,13 +41,13 @@ ament_python_install_package(${PROJECT_NAME})
 
 install(PROGRAMS
   scripts/challenge_tools_ros/map_server.py
-  scripts/challenge_tools_ros/map_server_demo.py
   scripts/challenge_tools_ros/apply_image_mask.py
   scripts/challenge_tools_ros/image_conversion_node.py
   scripts/challenge_tools_ros/rotate_image_180.py
   scripts/challenge_tools_ros/groundtruth_converter.py
   scripts/challenge_tools_ros/groundtruth_server.py
   scripts/challenge_tools_ros/challenge_tools_lib.py
+  scripts/challenge_tools_ros/ros2bag_to_euroc.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
