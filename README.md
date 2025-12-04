@@ -76,7 +76,7 @@ The structure of the dataset folder is as follows:
 ```
 BuchsIT/
 └── floor_X/
-    ├── floor_X.png
+    ├── floor_X.png  # binary floorplan
     └── date/
         ├── run_Y/
             ├── rosbag/
@@ -88,11 +88,25 @@ BuchsIT/
 
 <!-- TOC --><a name="dataset-floorplans"></a>
 ## Dataset Floorplans
-Together with the dataset, we provide floorplans in binary format, which can be converted into occupancy maps using the following [script](scripts/challenge_tools_ros/map_server.py)￼ if needed.
+Together with the dataset, we provide floorplans in binary format, which can be converted into occupancy maps using the following [script](scripts/challenge_tools_ros/map_server.py) if needed.
 
 <div align="center">
-  <img src="images/binary_floorplan_floor1.png" alt="floor1 floorplan" width="50%"/>
+  <img src="images/floor_to_occupancymap.png" alt="Occupancy map" width="50%"/>
 </div>
+
+First open Rviz which is configured to listen to an OccupancyMap topic:
+
+```
+ros2 launch challenge_tools_ros rviz_map_server.launch
+```
+
+This node will read the floorplan mask, convert to an OccupancyMap and publish it to Rviz:
+
+```
+ros2 run challenge_tools_ros map_server.py BuchsIT_3OG_mask.png
+```
+
+
 
 <!-- TOC --><a name="dataset-properties"></a>
 ## Dataset Properties
@@ -117,9 +131,11 @@ Each sequence was captured in a construction site environment. Note that each ru
 <!-- TOC --><a name="ground-truth"></a>
 ## Ground Truth
 
-- Floor UG: We provide the quantitative ground-truth trajectory in the `floor_UG_gt.csv` file (EuRoC format).
-  - **Note**: The ground truth was acquired using the [Lidar](#lidar-ground-truth-acquisition) system. The ground truth _does not perfectly align_ with the exact first frame of the video; instead, it begins $3.030716$ seconds after the start of the video. 
-- Other Floors: We provide a qualitative visual reference (`floor_X_gt.png`) to indicate the expected trajectory shape.
+We provide **provisional** quantitative [ground-truth trajectories](groundtruth) in the EuRoC format.
+
+* **Note**: The ground truth was acquired using the [Lidar](#lidar-ground-truth-acquisition) system. The ground truth **does not perfectly align** with the exact first frame of the video.
+
+**Official** ground truth data will be provided for the final release.
 
 <!-- TOC --><a name="euroc-format"></a>
 ## EuRoC Format
@@ -214,7 +230,7 @@ You can read the `gt_poses.csv` files and publish them to Rviz as follows:
 ros2 launch challenge_tools_ros groundtruth_server.launch run_name:=floor_1_2025-05-05_run_1
 ```
 
-Please, **note that these reference trajectories are provision and will be adjusted in the coming weeks**.
+Please, **note that these reference trajectories are provisional and will be adjusted in the coming weeks**.
 
 <!-- TOC --><a name="install-openvins-with-ros2"></a>
 ### Install OpenVINS with ROS2
