@@ -2,12 +2,12 @@
 <launch>
 
   <node name="apply_image_mask_cam0" pkg="challenge_tools_ros" exec="apply_image_mask.py" output="screen">
-    <param name="mask_filename" value="$(find-pkg-share challenge_tools_ros)/masks/cam0_mask.png"/>
+    <param name="mask_filename" value="$(find-pkg-share challenge_tools_ros)/config/hilti_openvins/mask_cam0.png"/>
     <param name="cam_topic" value="/cam0/image_raw"/>
   </node>
 
   <node name="apply_image_mask_cam1" pkg="challenge_tools_ros" exec="apply_image_mask.py" output="screen">
-    <param name="mask_filename" value="$(find-pkg-share challenge_tools_ros)/masks/cam1_mask.png"/>
+    <param name="mask_filename" value="$(find-pkg-share challenge_tools_ros)/config/hilti_openvins/mask_cam1.png"/>
     <param name="cam_topic" value="/cam1/image_raw"/>
   </node>
 
