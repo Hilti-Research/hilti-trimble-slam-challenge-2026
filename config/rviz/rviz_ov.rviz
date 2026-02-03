@@ -134,7 +134,7 @@ Visualization Manager:
       Head Length: 0.20000000298023224
       Length: 0.30000001192092896
       Line Style: Billboards
-      Line Width: 0.009999999776482582
+      Line Width: 0.05000000074505806
       Name: Path GT
       Offset:
         X: 0
@@ -151,7 +151,7 @@ Visualization Manager:
         Filter size: 10
         History Policy: Keep Last
         Reliability Policy: Reliable
-        Value: /ov_msckf/pathgt
+        Value: /gt_poses
       Value: true
     - Alpha: 0.800000011920929
       Autocompute Intensity Bounds: true
