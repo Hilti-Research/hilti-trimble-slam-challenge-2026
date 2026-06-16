@@ -19,7 +19,7 @@
   <em><sup>*</sup> Equal contribution</em>
 </p>
 
-[<img src="https://img.shields.io/badge/Home_Page-red" alt="Home Page">](https://hilti-trimble-challenge.com)
+[<img src="https://img.shields.io/badge/Home_Page-red" alt="Home Page">](https://hilti-challenge.com/dataset-2026)
 [<img src="https://img.shields.io/badge/Dataset-4285F4?logo=googledrive&logoColor=white" alt="Dataset">](https://drive.google.com/drive/u/1/folders/1BWFIfEL40Nvj-yeyre5O9dOiYCTWatv5)
 [<img src="https://badges.aleen42.com/src/youtube.svg" alt="Video">](https://www.youtube.com/playlist?list=PLIbIX8ez6UWS0N2A-lTmwYnmhMPQs8IYU)
 
@@ -43,6 +43,8 @@ If you find this dataset useful, please consider giving it a ⭐ and citing it i
 ```
 ## 🔔 News
 
+- **[2026-06-16]** ⚓ Released the [ground truth](groundtruth/) for all the sequences.
+- **[2026-06-12]** 🏆 Published the Challenge's [leaderboard](https://hilti-challenge.com/leaderboard-2026).
 - **[2026-03-05]** ℹ️ Added rolling shutter [specifications](config/hilti_openvins/rs_config.yaml).
 - **[2026-03-03]** 📐 Added floor plans in `dxf` format on [Google Drive](https://drive.google.com/drive/folders/1mr65VVF4LiNbH2ABPLzBKMCwxoWKiDz7?usp=drive_link).  
   > **Note:** These floor plans are not officially registered.
@@ -102,7 +104,7 @@ Accurate and reliable SLAM and localization is crucial in robotics, automation, 
 To advance the field and to establish a common benchmark for these demanding scenarios, [Hilti](http://hilti.com/), [Trimble](https://www.trimble.com/), and the [Dynamic Robot Systems Group](https://dynamic.robots.ox.ac.uk/) of University of Oxford have joined forces to launch the SLAM Challenge 2026.
 Our intention is to provide an open and realistic dataset, captured directly on active construction sites, to evaluate and compare SLAM systems in real world conditions.
 
-The winners of the challenge will be announced at [ICRA](https://2026.ieee-icra.org/) on **5th June 2026** in Vienna Austria, as part of the [OCRAIM workshop](https://ariamhub.com/ocraim/).
+The winners of the challenge were announced at [ICRA](https://2026.ieee-icra.org/) on **5th June 2026** in Vienna Austria, as part of the [OCRAIM workshop](https://ariamhub.com/ocraim/).
 
 <table width="100%">
   <tr>
@@ -200,7 +202,12 @@ $$\text{finalScore} =  \sum_{i=1}^{25} \text{score}_i $$
 <!-- TOC --><a name="final-score"></a>
 ### Final Score
 
-We provide 30 recordings to test, but we will evaluate only those that **were not** part of the Early Release made in November. This is because we provided the Ground Truth for these 5 Early Release runs (see [Ground Truth](#ground-truth) section).
+We provide 30 recordings to test, but we will evaluate only those that **were not** part of the Early Release made in November. This is because we provided the Ground Truth for these 5 Early Release runs:
+- `floor_1_2025-05-05_run_1`,
+- `floor_2_2025-05-05_run_1`,
+- `floor_2_2025-10-28_run_1`,
+- `floor_2_2025-10-28_run_2`,
+- `floor_UG1_2025-10-16_run_1`.
 
 As a result, for the **SLAM** task we will evaluate 25 out of 30 runs, and the maximum achievable total score will be **2500 points**.
 
@@ -227,10 +234,10 @@ The structure of the dataset folder is as follows:
 data/
 └── floor_X/
     └── YYYY-MM-DD/
-        ├── run_Z/
-            ├── rosbag/
-            │   └── rosbag.db3 # ROS 2 bag file
-            │   └── metadata.yaml
+        └── run_Z/
+            └── rosbag/
+                └── rosbag.db3 # ROS 2 bag file
+                └── metadata.yaml
 ```
 
 In the table below we show the trajectories of 5 runs. If you want to have an easier look at all the 30 runs, check all the videos on the [youtube page](https://www.youtube.com/playlist?list=PLIbIX8ez6UWS0N2A-lTmwYnmhMPQs8IYU).
@@ -287,7 +294,7 @@ In general, you can expect the floorplans to have an accuracy of 1cm relative to
 <!-- TOC --><a name="ground-truth"></a>
 ## Ground Truth
 
-Ground truth is provided in `cam0->map` convention (the transformation that expresses the pose of `cam0` in the `map` frame) for five early release runs. You can find them [here](https://drive.google.com/drive/folders/1i20VagJDaM7hefWAlGFZ4kRAoehxAQAK?usp=drive_link).
+Ground truth is provided in `cam0->map` convention (the transformation that expresses the pose of `cam0` in the `map` frame). You can find the ground truth files for all the sequences [here](https://drive.google.com/drive/folders/1i20VagJDaM7hefWAlGFZ4kRAoehxAQAK?usp=drive_link).
 
 They were acquired using a [LiDAR](#lidar-ground-truth-acquisition) system, and transformed using LiDAR-camera extrinsics and IMU time alignment. Since the LiDAR starts slightly later than the camera, we will not evaluate the trajectory during the first 5 seconds of each run.
 
