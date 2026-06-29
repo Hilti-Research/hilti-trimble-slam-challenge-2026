@@ -43,6 +43,7 @@ If you find this dataset useful, please consider giving it a ⭐ and citing it i
 ```
 ## 🔔 News
 
+- **[2026-06-29]** 🔎 Added the [detailed sequence categorization](SEQUENCES.md).
 - **[2026-06-16]** ⚓ Released the [ground truth](groundtruth/) for all the sequences.
 - **[2026-06-12]** 🏆 Published the Challenge's [leaderboard](https://hilti-challenge.com/leaderboard-2026).
 - **[2026-03-05]** ℹ️ Added rolling shutter [specifications](config/hilti_openvins/rs_config.yaml).
