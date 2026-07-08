@@ -33,12 +33,12 @@
 
 If you find this dataset useful, please consider giving it a ⭐ and citing it in your work.
 ```bibtex
-@online{slamchallenge2026,
+@misc{slamchallenge2026,
    title = {{Hilti}-{Trimble}-{Oxford} Dataset: 360 Visual-Inertial Benchmark with Floor Plan Priors for SLAM and Localization},
-   year = {2026},
-   url = {https://github.com/Hilti-Research/hilti-trimble-slam-challenge-2026},
    author = {Centanni, Samuele and Zhang, Yuhao and Tao, Yifu and Kindle, Julien and Neuhaus, Frank and Koß, Tilman and Patel, Aryaman and Helmberger, Michael and Szymańska, Emilia and Gräber, Torben and Fallon, Maurice},
-   urldate = {2026-02-01}
+   year = {2026},
+   eprint = {2607.06464},
+   url = {https://arxiv.org/abs/2607.06464}
 }
 ```
 ## 🔔 News
