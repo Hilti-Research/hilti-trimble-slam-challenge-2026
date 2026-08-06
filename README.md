@@ -20,8 +20,12 @@
 </p>
 
 [<img src="https://img.shields.io/badge/Home_Page-red" alt="Home Page">](https://hilti-challenge.com/dataset-2026)
-[<img src="https://img.shields.io/badge/Dataset-4285F4?logo=googledrive&logoColor=white" alt="Dataset">](https://drive.google.com/drive/u/1/folders/1BWFIfEL40Nvj-yeyre5O9dOiYCTWatv5)
+[<img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-yellow" alt="Hugging Face Dataset">](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026)
 [<img src="https://badges.aleen42.com/src/youtube.svg" alt="Video">](https://www.youtube.com/playlist?list=PLIbIX8ez6UWS0N2A-lTmwYnmhMPQs8IYU)
+[<img src="https://img.shields.io/badge/arXiv-2607.06464-b31b1b" alt="arXiv">](https://arxiv.org/abs/2607.06464)
+
+
+
 
 <p>
   <a href="https://hilti-trimble-challenge.com/">
@@ -43,11 +47,12 @@ If you find this dataset useful, please consider giving it a ⭐ and citing it i
 ```
 ## 🔔 News
 
+- **[2026-08-06]** 🤗 Released the dataset on [Hugging Face](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026).
 - **[2026-06-29]** 🔎 Added the [detailed sequence categorization](SEQUENCES.md).
 - **[2026-06-16]** ⚓ Released the [ground truth](groundtruth/) for all the sequences.
 - **[2026-06-12]** 🏆 Published the Challenge's [leaderboard](https://hilti-challenge.com/leaderboard-2026).
 - **[2026-03-05]** ℹ️ Added rolling shutter [specifications](config/hilti_openvins/rs_config.yaml).
-- **[2026-03-03]** 📐 Added floor plans in `dxf` format on [Google Drive](https://drive.google.com/drive/folders/1mr65VVF4LiNbH2ABPLzBKMCwxoWKiDz7?usp=drive_link).  
+- **[2026-03-03]** 📐 Added floor plans in `dxf` format.  
   > **Note:** These floor plans are not officially registered.
 - **[2026-02-27]** 📷 Updated camera parameters and intrinsic calibration.
 - **[2026-02-16]** 🖼️ Introduced [image stitching script](challenge_tools_ros/bag_helper/image_stitching.py) for dataset post-processing.
@@ -223,7 +228,7 @@ You can submit your entry using our [evaluation server](https://submit.hilti-cha
 <!-- TOC --><a name="dataset"></a>
 # The Challenge Dataset
 
-You can find the public folder with all 30 samples [here](https://drive.google.com/drive/folders/19mRLGJYYAJAvC-qnPyimRLQAV8RONp9f?usp=drive_link).
+You can find the public folder with all 30 samples [here](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026).
 
 In order to simplify the download, we provide two python scripts in the [download_data](challenge_tools_ros/download_data/) folder.
 
@@ -245,11 +250,11 @@ In the table below we show the trajectories of 5 runs. If you want to have an ea
 
 | Youtube Video | Rosbag Folder | Ground Truth Image |
 | :---: | :---: | :---: |
-| [floor_1_2025-05-05_run_1](https://www.youtube.com/watch?v=dGeTArx1ah0) | [rosbag](https://drive.google.com/drive/folders/1LR_82lGppMEIL1cqjKb9FDIisKgRsKif?usp=drive_link) | <img src="media/GT_plots_early_release/floor_1_gt.png" alt="GT Floor 1" width="400"/> |
-| [floor_2_2025-05-05_run_1](https://www.youtube.com/watch?v=nW9fxv75HOs) | [rosbag](https://drive.google.com/drive/folders/1pswcr7wUIUVsr5Y13-BNre9vuABihHsT?usp=drive_link) | <img src="media/GT_plots_early_release/floor_2_gt.png" alt="GT Floor 1" width="400"/> |
-| [floor_2_2025-10-28_run_1](https://www.youtube.com/watch?v=fEBxu02EnSs) | [rosbag](https://drive.google.com/drive/folders/1LebGR8riGU9QL_XfaYM9VJBrLIaI7q4u?usp=drive_link) | <img src="media/GT_plots_early_release/floor_2_gt_run1.png" alt="GT Floor 1" width="400"/> |
-| [floor_2_2025-10-28_run_2](https://www.youtube.com/watch?v=EzEfg7PvjD4)| [rosbag](https://drive.google.com/drive/folders/1USazXLkD4uuwFw97VxbjFEr9WAn91kMW?usp=drive_link) | <img src="media/GT_plots_early_release/floor_2_gt_run2.png" alt="GT Floor 1" width="400"/> |
-| [floor_UG1_2025-10-16_run_1](https://www.youtube.com/watch?v=BGmqwdSTStU) | [rosbag](https://drive.google.com/drive/folders/1pB3829XSki2ScQeuWYG-myMco31n594m?usp=drive_link) | <img src="media/GT_plots_early_release/floor_UG_gt.png" alt="GT Floor 1" width="400"/> |
+| [floor_1_2025-05-05_run_1](https://www.youtube.com/watch?v=dGeTArx1ah0) | [rosbag](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026/tree/main/data/floor_1/2025-05-05/run_1/rosbag) | <img src="media/GT_plots_early_release/floor_1_gt.png" alt="GT Floor 1" width="400"/> |
+| [floor_2_2025-05-05_run_1](https://www.youtube.com/watch?v=nW9fxv75HOs) | [rosbag](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026/tree/main/data/floor_2/2025-05-05/run_1/rosbag) | <img src="media/GT_plots_early_release/floor_2_gt.png" alt="GT Floor 1" width="400"/> |
+| [floor_2_2025-10-28_run_1](https://www.youtube.com/watch?v=fEBxu02EnSs) | [rosbag](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026/tree/main/data/floor_2/2025-10-28/run_1/rosbag) | <img src="media/GT_plots_early_release/floor_2_gt_run1.png" alt="GT Floor 1" width="400"/> |
+| [floor_2_2025-10-28_run_2](https://www.youtube.com/watch?v=EzEfg7PvjD4)| [rosbag](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026/tree/main/data/floor_2/2025-10-28/run_2/rosbag) | <img src="media/GT_plots_early_release/floor_2_gt_run2.png" alt="GT Floor 1" width="400"/> |
+| [floor_UG1_2025-10-16_run_1](https://www.youtube.com/watch?v=BGmqwdSTStU) | [rosbag](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026/tree/main/data/floor_UG1/2025-10-16/run_1/rosbag) | <img src="media/GT_plots_early_release/floor_UG_gt.png" alt="GT Floor 1" width="400"/> |
 
 > [!NOTE]
 > Please, if you have any doubt or issue refer to the **[Issues section](https://github.com/Hilti-Research/hilti-trimble-slam-challenge-2026/issues)**.
@@ -295,7 +300,7 @@ In general, you can expect the floorplans to have an accuracy of 1cm relative to
 <!-- TOC --><a name="ground-truth"></a>
 ## Ground Truth
 
-Ground truth is provided in `cam0->map` convention (the transformation that expresses the pose of `cam0` in the `map` frame). You can find the ground truth files for all the sequences [here](https://drive.google.com/drive/folders/1i20VagJDaM7hefWAlGFZ4kRAoehxAQAK?usp=drive_link).
+Ground truth is provided in `cam0->map` convention (the transformation that expresses the pose of `cam0` in the `map` frame). You can find the ground truth files for all the sequences [here](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026/tree/main/groundtruth).
 
 They were acquired using a [LiDAR](#lidar-ground-truth-acquisition) system, and transformed using LiDAR-camera extrinsics and IMU time alignment. Since the LiDAR starts slightly later than the camera, we will not evaluate the trajectory during the first 5 seconds of each run.
 
@@ -364,7 +369,7 @@ A LiDAR-Inertial mapping device containing a **Hesai XT32 LiDAR** ([Hesai websit
 <!-- TOC --><a name="camera-and-imu-calibration"></a>
 ### Camera and IMU Calibration
 
-We provide camera and IMU calibration results for both the _pinhole equidistant_ camera model and the _enhanced unified_ camera model (EUCM) [here](https://drive.google.com/drive/folders/1kYxgaCAtsVLe1B1MGsc2kR6RnByloHUV?usp=sharing). The original calibration runs are also available in the [public drive](https://drive.google.com/drive/folders/1kYxgaCAtsVLe1B1MGsc2kR6RnByloHUV?usp=drive_link). 
+We provide camera and IMU calibration results for both the _pinhole equidistant_ camera model and the _enhanced unified_ camera model (EUCM) [here](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026/tree/main/camera_calibration). The original calibration runs are also available in the [public dataset](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026/tree/main/camera_calibration). 
 
 Calibration for the EUCM was performed using the open-source [Kalibr](https://github.com/ethz-asl/kalibr) toolbox. Since pinhole–equidistant camera model is widely supported by most existing SLAM systems, we fit its parameters to the EUCM intrinsics, as Kalibr’s implementation was unable to successfully calibrate such large-FOV fisheye cameras using this model. In addition, we have added support for EUCM to [OpenVINS](https://github.com/Hilti-Research/open_vins) so as to demonstrate that OpenVINS can process all of these recordings.
 
