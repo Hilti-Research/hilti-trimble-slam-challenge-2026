@@ -47,6 +47,7 @@ If you find this dataset useful, please consider giving it a ⭐ and citing it i
 ```
 ## 🔔 News
 
+- **[2026-09-21]** ⏱️ Added the explanation about the sensors synchronization in the ground truth collection device. 
 - **[2026-08-06]** 🤗 Released the dataset on [Hugging Face](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026).
 - **[2026-06-29]** 🔎 Added the [detailed sequence categorization](SEQUENCES.md).
 - **[2026-06-16]** ⚓ Released the [ground truth](groundtruth/) for all the sequences.
@@ -74,6 +75,7 @@ If you find this dataset useful, please consider giving it a ⭐ and citing it i
    * [Dataset Floorplans](#dataset-floorplans)
    * [Dataset Properties](#dataset-properties)
    * [Ground Truth](#ground-truth)
+      + [Sensors Synchronization](#sensors-synchronization)
    * [Initial Localization in Floorplan](#initial_localization)
    * [Sensor Data & ROS Bags](#sensor-data-ros-bags)
       + [Topics Description](#topics-description)
@@ -303,6 +305,15 @@ In general, you can expect the floorplans to have an accuracy of 1cm relative to
 Ground truth is provided in `cam0->map` convention (the transformation that expresses the pose of `cam0` in the `map` frame). You can find the ground truth files for all the sequences [here](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026/tree/main/groundtruth).
 
 They were acquired using a [LiDAR](#lidar-ground-truth-acquisition) system, and transformed using LiDAR-camera extrinsics and IMU time alignment. Since the LiDAR starts slightly later than the camera, we will not evaluate the trajectory during the first 5 seconds of each run.
+
+<!-- TOC --><a name="sensors-synchronization"></a>
+### Sensors synchronization
+
+The ground-truth LiDAR and IMU are hardware-synchronized using a PPS signal. To synchronize the independently running Insta360 system, we align the two IMU streams using the norm of the gyroscope measurements, which is invariant to the relative IMU orientation. A brute-force correlation search first provides an initial time offset, followed by nonlinear refinement of the time offset and linear clock-scale factor by minimizing the difference between the two IMU signals, using cubic interpolation for continuous-time sampling. Gyroscope biases are optimized jointly. A visualization of synchronized IMU signals is provided in the figure below:
+
+<div align="center">
+  <img src="media/synchronization.png" alt="synchronization" width="75%"/>
+</div>
 
 <!-- TOC --><a name="initial_localization"></a>
 ## Initial Localization in Floorplan
