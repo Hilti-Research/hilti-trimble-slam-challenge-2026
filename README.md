@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>Hilti × Trimble 360 Visual-Inertial SLAM Challenge 2026</h1>
+<h1>Hilti × Trimble SLAM Challenge 2026</h1>
 
 <p>
   <a href="https://scholar.google.com/citations?hl=it&user=677n63kAAAAJ">Samuele Centanni</a><sup>*</sup>,
@@ -19,100 +19,39 @@
   <em><sup>*</sup> Equal contribution</em>
 </p>
 
-[<img src="https://img.shields.io/badge/Home_Page-red" alt="Home Page">](https://hilti-challenge.com/dataset-2026)
-[<img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-yellow" alt="Hugging Face Dataset">](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026)
-[<img src="https://badges.aleen42.com/src/youtube.svg" alt="Video">](https://www.youtube.com/playlist?list=PLIbIX8ez6UWS0N2A-lTmwYnmhMPQs8IYU)
-[<img src="https://img.shields.io/badge/arXiv-2607.06464-b31b1b" alt="arXiv">](https://arxiv.org/abs/2607.06464)
-
-
-
+[<img src="https://img.shields.io/badge/Home%20Page--red?style=social&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iIzQyODVGNCIgZD0iTTEyIDMgMiAxMmgzdjloNXYtNmg0djZoNXYtOWgzTDEyIDN6Ii8%2BPC9zdmc%2B" alt="Home Page">](https://hilti-challenge.com/dataset-2026)
+[<img src="https://img.shields.io/badge/arXiv--b31b1b?style=social&logo=arxiv" alt="arXiv">](https://arxiv.org/abs/2607.06464)
+[<img src="https://img.shields.io/badge/Hugging%20Face--yellow?style=social&logo=huggingface&logoColor=FFD21E" alt="Hugging Face Dataset">](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026/tree/main)
+[<img src="https://img.shields.io/badge/YouTube--red?style=social&logo=youtube" alt="YouTube">](https://www.youtube.com/playlist?list=PLIbIX8ez6UWS0N2A-lTmwYnmhMPQs8IYU)
 
 <p>
   <a href="https://hilti-trimble-challenge.com/">
-    <img src="media/HTSC2026.png?raw=true" alt="HTSC2026" width="90%">
+    <img src="media/HTSC2026.png?raw=true" alt="HTSC2026" width="80%">
   </a>
 </p>
 
 </div>
 
-If you find this dataset useful, please consider giving it a ⭐ and citing it in your work.
+The accompanying paper has been accepted for publication in **IEEE Robotics and Automation Letters**. If you find this dataset useful, please consider giving it a ⭐ and citing it in your work.
+
 ```bibtex
-@misc{slamchallenge2026,
-   title = {{Hilti}-{Trimble}-{Oxford} Dataset: 360 Visual-Inertial Benchmark with Floor Plan Priors for SLAM and Localization},
-   author = {Centanni, Samuele and Zhang, Yuhao and Tao, Yifu and Kindle, Julien and Neuhaus, Frank and Koß, Tilman and Patel, Aryaman and Helmberger, Michael and Szymańska, Emilia and Gräber, Torben and Fallon, Maurice},
-   year = {2026},
-   eprint = {2607.06464},
-   url = {https://arxiv.org/abs/2607.06464}
+@article{slamchallenge2026,
+   title={{Hilti}-{Trimble}-{Oxford} Dataset: 360 Visual-Inertial Benchmark with Floor Plan Priors for {SLAM} and Localization},
+   author={Centanni, Samuele and Zhang, Yuhao and Tao, Yifu and Kindle, Julien and Neuhaus, Frank and Koß, Tilman and Patel, Aryaman and Helmberger, Michael and Szymańska, Emilia and Gräber, Torben and Fallon, Maurice},
+   journal={arXiv preprint arXiv:2607.06464},
+   year={2026}
 }
 ```
-## 🔔 News
 
-- **[2026-09-21]** ⏱️ Added the explanation about the sensors synchronization in the ground truth collection device. 
-- **[2026-08-06]** 🤗 Released the dataset on [Hugging Face](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026).
-- **[2026-06-29]** 🔎 Added the [detailed sequence categorization](SEQUENCES.md).
-- **[2026-06-16]** ⚓ Released the [ground truth](groundtruth/) for all the sequences.
-- **[2026-06-12]** 🏆 Published the Challenge's [leaderboard](https://hilti-challenge.com/leaderboard-2026).
-- **[2026-03-05]** ℹ️ Added rolling shutter [specifications](config/hilti_openvins/rs_config.yaml).
-- **[2026-03-03]** 📐 Added floor plans in `dxf` format.  
-  > **Note:** These floor plans are not officially registered.
-- **[2026-02-27]** 📷 Updated camera parameters and intrinsic calibration.
-- **[2026-02-16]** 🖼️ Introduced [image stitching script](challenge_tools_ros/bag_helper/image_stitching.py) for dataset post-processing.
-- **[2026-02-16]** 🎨 Added custom image encoding options in `image_conversion_node`.
-- **[2026-02-03]** 🗺️ Fixed `floor_UG1_2025-05-19_run_1` static transformation.
+<a name="introduction-360-visual-inertial-slam-challenge-with-additional-building-floorplans"></a>
+## Introduction
 
-<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
-# Table of Contents
-
-- [Challenge Homepage & Evaluation Server](#challenge-homepage-evaluation-server)
-- [Introduction: 360 Visual-Inertial SLAM Challenge with Additional Building Floorplans](#introduction-360-visual-inertial-slam-challenge-with-additional-building-floorplans)
-- [Challenge & Evaluation](#challenge-evaluation)
-   * [What to Deliver](#what-to-deliver)
-   * [Metric](#metric)
-      + [Notes](#notes)
-      + [Final Score](#final-score)
-   * [Evaluation Server](#evaluation-server)
-- [Dataset](#dataset)
-   * [Dataset Floorplans](#dataset-floorplans)
-   * [Dataset Properties](#dataset-properties)
-   * [Ground Truth](#ground-truth)
-      + [Sensors Synchronization](#sensors-synchronization)
-   * [Initial Localization in Floorplan](#initial_localization)
-   * [Sensor Data & ROS Bags](#sensor-data-ros-bags)
-      + [Topics Description](#topics-description)
-      + [Constant Timestamp Shift](#constant-timestamp-shift)
-   * [Devices](#devices)
-      + [Camera (Visual-Inertial Sensor)](#camera-visual-inertial-sensor)
-      + [LiDAR (Ground Truth Acquisition)](#lidar-ground-truth-acquisition)
-      + [Camera and IMU Calibration](#camera-and-imu-calibration)
-- [Challenge Tools ROS](#challenge-tools-ros)
-   * [Install Challenge Tools](#install-challenge-tools)
-   * [Image Decompression](#image-decompression-1)
-   * [Image Stitching](#image-stitching)
-   * [Image Inversion](#image-inversion)
-   * [OpenVINS Example](#openvins-example)
-      + [Install OpenVINS with ROS2](#install-openvins-with-ros2)
-      + [Run OpenVINS](#run-openvins)
-   * [Stella-VSLAM Example](#stella-vslam-example)
-      + [Run Stella-VSLAM](#run-stella-vslam)
-
-<!-- TOC end -->
-
-
-<!-- TOC --><a name="challenge-homepage-evaluation-server"></a>
-# Challenge Homepage & Evaluation Server
-
-You can find the **official challenge homepage** for this challenge at https://hilti-trimble-challenge.com. It includes an _evaluation server_ and _prize money_ information.
-
-
-<!-- TOC --><a name="introduction-360-visual-inertial-slam-challenge-with-additional-building-floorplans"></a>
-# Introduction: 360 Visual-Inertial SLAM within a Building Floorplan
-
-Accurate and reliable SLAM and localization is crucial in robotics, automation, and digital construction workflows. Yet real-world construction sites remain amoung the most challenging environments for modern Visual-Inertial SLAM: changing lighting conditions, repetitive texture and ongoing building works push state-of-the-art algorithms to their limits.
+Accurate and reliable SLAM and localization is crucial in robotics, automation, and digital construction workflows. Yet real-world construction sites remain among the most challenging environments for modern Visual-Inertial SLAM: changing lighting conditions, repetitive texture and ongoing building works push state-of-the-art algorithms to their limits.
 
 To advance the field and to establish a common benchmark for these demanding scenarios, [Hilti](http://hilti.com/), [Trimble](https://www.trimble.com/), and the [Dynamic Robot Systems Group](https://dynamic.robots.ox.ac.uk/) of University of Oxford have joined forces to launch the SLAM Challenge 2026.
 Our intention is to provide an open and realistic dataset, captured directly on active construction sites, to evaluate and compare SLAM systems in real world conditions.
 
-The winners of the challenge were announced at [ICRA](https://2026.ieee-icra.org/) on **5th June 2026** in Vienna Austria, as part of the [OCRAIM workshop](https://ariamhub.com/ocraim/).
+The winners of the challenge were announced at [ICRA](https://2026.ieee-icra.org/) on **5th June 2026** in Vienna, Austria, as part of the [OCRAIM workshop](https://ariamhub.com/ocraim/).
 
 <table width="100%">
   <tr>
@@ -134,402 +73,47 @@ The winners of the challenge were announced at [ICRA](https://2026.ieee-icra.org
   </tr>
 </table>
 
-
-<!-- TOC --><a name="challenge-evaluation"></a>
-# Challenge & Evaluation
-
-We challenge participants with two different tasks. You are free to participate in one or both of these tasks.
-
-The two tasks are the following:
-
-1. **SLAM**: we ask you to estimate the trajectory of the Insta360 camera - in **any reference frame**,
-2. **Localization**: we ask you to estimate the camera trajectory in the **floorplan reference frame** (map coordinate frame). We consider the bottom-left pixel of the floorplan as the $(0,0)$ coordinate.
-
-<!-- TOC --><a name="what-to-deliver"></a>
-## What to Deliver
-
-For each run, we require your trajectory estimates to achieve **at least $99$**% coverage of the ground truth trajectory. **Otherwise**, the score for that run will be automatically set to 0.
-
-The coverage is computed as $\dfrac{\text{|matched preditected poses|}}{\text{|ground truth poses|}} * 100$.
-
-Predictions should be submitted using the **TUM** format:  
-
-```
-timestamp tx ty tz qx qy qz qw
-```
-
-Each file must be named as follows:
-
-```
-floor_X_YYYY-MM-DD_run_Z.txt
-```
-
-where:
-
-- $X$ is the floor number, i.e. $1, 2, 3, 4, 5, 6, 7, \text{EG}, \text{UG1}, \text{UG2}$
-- $\text{YYYY, MM, DD}$ are the year, month and day of the run respectively
-- $Z$ is the run number on that day, i.e. $1, 2$
-
-<!-- TOC --><a name="metric"></a>
-## Scoring Metric
-
-You will be evaluated using an exponential score --- where a higher score corresponds with higher accuracy.
-
-The score is computed using this formula:
-
-$$ \text{score} = \dfrac1N \sum_{t=1}^N a \cdot e^{-c \cdot \text{error}_t} $$
-
-with the constants
-
-$$a = 100.0$$
-
-$$c = 0.46051701859880917$$
-
-$N$ is the number of poses in that run and $t$ is the $t-th$ pose. The score is **capped at 100 for each run**.
-
-The final score will be then the sum of each run score:
-
-$$\text{finalScore} =  \sum_{i=1}^{25} \text{score}_i $$
-
-<!-- TOC --><a name="notes"></a>
-### Notes
-
-1) The values $a$ and $c$ were obtained by fitting an exponential function such that:
-
-- when the error is **0 m**, the score is **100**
-- when the error is **10 m**, the score is **1**
-
-2) Our LiDAR ground truth does not start at exactly the starting point of the camera recording, as a result we **will not evaluate the trajectory of the first 5 seconds of each run**.
-
-3) When testing your solution with our evaluation server you will receive a report showing the error plots for your entry. We decided to hide details for six of the runs. For these six runs we will show you only the score **but we will not show the error plots for these six runs**.
-
-4) In the **Localization task** we will not evaluate the _z-coordinate_.
-
-5) **Important**: we will not adjust the trajectory scale (when using Evo), therefore you have to ensure that your trajectories are properly scaled.
-
-<!-- TOC --><a name="final-score"></a>
-### Final Score
-
-We provide 30 recordings to test, but we will evaluate only those that **were not** part of the Early Release made in November. This is because we provided the Ground Truth for these 5 Early Release runs:
-- `floor_1_2025-05-05_run_1`,
-- `floor_2_2025-05-05_run_1`,
-- `floor_2_2025-10-28_run_1`,
-- `floor_2_2025-10-28_run_2`,
-- `floor_UG1_2025-10-16_run_1`.
-
-As a result, for the **SLAM** task we will evaluate 25 out of 30 runs, and the maximum achievable total score will be **2500 points**.
-
-For the **Localization** task we also will exclude `floor_UG2-2025-12-02_run_1` as we do not provide a floorplan for this recording. As a result, the maximum achievable total score for localization task will be **2400 points** (24 runs out of 30).
-
-<!-- TOC --><a name="evaluation-server"></a>
-## Evaluation Server
-
-You can submit your entry using our [evaluation server](https://submit.hilti-challenge.com/). Good Luck!
-
-
-<!-- TOC --><a name="dataset"></a>
-# The Challenge Dataset
-
-You can find the public folder with all 30 samples [here](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026).
-
-In order to simplify the download, we provide two python scripts in the [download_data](challenge_tools_ros/download_data/) folder.
-
-
-
-The structure of the dataset folder is as follows:
-
-```
-data/
-└── floor_X/
-    └── YYYY-MM-DD/
-        └── run_Z/
-            └── rosbag/
-                └── rosbag.db3 # ROS 2 bag file
-                └── metadata.yaml
-```
-
-In the table below we show the trajectories of 5 runs. If you want to have an easier look at all the 30 runs, check all the videos on the [youtube page](https://www.youtube.com/playlist?list=PLIbIX8ez6UWS0N2A-lTmwYnmhMPQs8IYU).
-
-| Youtube Video | Rosbag Folder | Ground Truth Image |
-| :---: | :---: | :---: |
-| [floor_1_2025-05-05_run_1](https://www.youtube.com/watch?v=dGeTArx1ah0) | [rosbag](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026/tree/main/data/floor_1/2025-05-05/run_1/rosbag) | <img src="media/GT_plots_early_release/floor_1_gt.png" alt="GT Floor 1" width="400"/> |
-| [floor_2_2025-05-05_run_1](https://www.youtube.com/watch?v=nW9fxv75HOs) | [rosbag](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026/tree/main/data/floor_2/2025-05-05/run_1/rosbag) | <img src="media/GT_plots_early_release/floor_2_gt.png" alt="GT Floor 1" width="400"/> |
-| [floor_2_2025-10-28_run_1](https://www.youtube.com/watch?v=fEBxu02EnSs) | [rosbag](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026/tree/main/data/floor_2/2025-10-28/run_1/rosbag) | <img src="media/GT_plots_early_release/floor_2_gt_run1.png" alt="GT Floor 1" width="400"/> |
-| [floor_2_2025-10-28_run_2](https://www.youtube.com/watch?v=EzEfg7PvjD4)| [rosbag](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026/tree/main/data/floor_2/2025-10-28/run_2/rosbag) | <img src="media/GT_plots_early_release/floor_2_gt_run2.png" alt="GT Floor 1" width="400"/> |
-| [floor_UG1_2025-10-16_run_1](https://www.youtube.com/watch?v=BGmqwdSTStU) | [rosbag](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026/tree/main/data/floor_UG1/2025-10-16/run_1/rosbag) | <img src="media/GT_plots_early_release/floor_UG_gt.png" alt="GT Floor 1" width="400"/> |
-
-> [!NOTE]
-> Please, if you have any doubt or issue refer to the **[Issues section](https://github.com/Hilti-Research/hilti-trimble-slam-challenge-2026/issues)**.
-
-<!-- TOC --><a name="dataset-floorplans"></a>
-## Dataset Floorplans
-
-We provide the building floorplans in as PNG images, which can be converted into ROS2 Occupancy Maps and viusalised in Rviz using the following [script](/challenge_tools_ros/challenge_tools_ros/runtime_helper/map_server.py).
-
-The floorplans are stored in the repo [here](floorplans). We provide two types of floorplan - **with and without windows**. Both formats show the main columns and walls of the building site. 
-
-<div align="center">
-  <img src="floorplans/masks_no_windows/floor_1.png" alt="floor_1 floorplan - no_window" width="50%"/>
-</div>
-
-The floorplans show the intended state of the building at the end of construction. During construction, the walls and columns are successively built which means that not all elements are present in the earlier recordings.
-
-This image shows a ground truth trajectory aligned to the floor 1 floorplan.
-
-<div align="center">
-  <img src="media/floorplan_vs_pcd.png" alt="floorplan vs pcd" width="50%"/>
-</div>
-
-
-<!-- TOC --><a name="dataset-properties"></a>
-## Dataset Properties
-
-The dataset captures several realistic real-world challenges. These include:
-
-- _Dynamic Initialization_: some runs start with **intentional** motion at the beginning of the run. This is a realistic challenge for this application.
-- _Imprecise floorplans_: construction sites always contain deviations in their as-built state versus the as-planned state.
-
-Algorithms which are robust to these deviations and to dynamic initialization will be more useful in real-world construction sites.
-
-An example of deviation is shown in the following - the real wall is shorter than the floorplan:
-
-<div align="center">
-  <img src="media/floorplan_pcd_devation.png" alt="floorplan vs pcd" width="50%"/>
-</div>
-
-In general, you can expect the floorplans to have an accuracy of 1cm relative to the real world.
-
-<!-- TOC --><a name="ground-truth"></a>
-## Ground Truth
-
-Ground truth is provided in `cam0->map` convention (the transformation that expresses the pose of `cam0` in the `map` frame). You can find the ground truth files for all the sequences [here](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026/tree/main/groundtruth).
-
-They were acquired using a [LiDAR](#lidar-ground-truth-acquisition) system, and transformed using LiDAR-camera extrinsics and IMU time alignment. Since the LiDAR starts slightly later than the camera, we will not evaluate the trajectory during the first 5 seconds of each run.
-
-<!-- TOC --><a name="sensors-synchronization"></a>
-### Sensors synchronization
-
-The ground-truth LiDAR and IMU are hardware-synchronized using a PPS signal. To synchronize the independently running Insta360 system, we align the two IMU streams using the norm of the gyroscope measurements, which is invariant to the relative IMU orientation. A brute-force correlation search first provides an initial time offset, followed by nonlinear refinement of the time offset and linear clock-scale factor by minimizing the difference between the two IMU signals, using cubic interpolation for continuous-time sampling. Gyroscope biases are optimized jointly. A visualization of synchronized IMU signals is provided in the figure below:
-
-<div align="center">
-  <img src="media/synchronization.png" alt="synchronization" width="75%"/>
-</div>
-
-<!-- TOC --><a name="initial_localization"></a>
-## Initial Localization in Floorplan
-To provide an initial localization estimate (for the localization task) we provide the ground-truth camera pose at approximately t = 10005 sec at [here](groundtruth/init_gt_poses.csv) (the start camera timestamp is t = 10000 sec).
-
-<!-- TOC --><a name="sensor-data-ros-bags"></a>
-## Sensor Data & ROS Bags
-
-<!-- TOC --><a name="topics-description"></a>
-### Topic Descriptions
-
-The provided recordings are ROS 2 bags. The dataset contains the following topics:
-| Topic Name | Message Type | Frequency | Description |
-| :--- | :--- | :--- | :--- |
-| `/cam0/image_raw/compressed` | `sensor_msgs/msg/CompressedImage` | 30 Hz | Front Camera data (RGB, 1472×1440 resolution). Compressed to minimize file size. |
-| `/cam1/image_raw/compressed` | `sensor_msgs/msg/CompressedImage` | 30 Hz | Back Camera data (RGB, 1472×1440 resolution). Compressed to minimize file size. |
-| `/imu/data_raw` | `sensor_msgs/msg/Imu` | 1000 Hz | Raw IMU data. |
-
-> [!TIP]
-> **Humble + Ubuntu 22.04 Compatibility Fix**
-> 
-> If you encounter playback errors, update your configuration of the `metadata.yaml` file of each rosbag :
->
-> Replace:
->   ```
->   offered_qos_profiles:
->      []
->   ```
-> With:
->   ```
->   offered_qos_profiles:
->      ""
->   ```
-
-
-<!-- TOC --><a name="constant-timestamp-shift"></a>
-### Constant Timestamp Shift
-In Insta360, the IMU recordings slightly preceed the cameras. To avoid negative IMU timestamps, we applied a constant timestamp shift of `1e4` seconds to all runs. Therefore, all image message timestamps start at t = 10000 sec.
-
-<!-- TOC --><a name="devices"></a>
-## Devices
-
-
-<!-- TOC --><a name="camera-visual-inertial-sensor"></a>
-### Camera (Visual-Inertial Sensor)
-
-Each run was captured using the **Insta360 One-RS 1-Inch Edition** ([Insta360 website](https://www.insta360.com/product/insta360-oners/1inch-360)).
-
-- Sensors and Lenses: The camera is equipped with two 1-inch CMOS sensors (co-engineered with Leica). Each lens is a Leica Summicron-A 6.52 mm f/2.2 fisheye, providing an extremely wide field of view (approx. 200° per lens) for full 360° coverage.
-
-- Shutter: The sensor uses an electronic (rolling) shutter. The rolling shutters of the two cameras are well synchronized, including their exposure timings.
-
-- Integrated IMU: The camera includes a 6-axis Inertial Measurement Unit (3-axis gyroscope + 3-axis accelerometer). IMU data is internally recorded and embedded into the video metadata.
-
-
-<!-- TOC --><a name="lidar-ground-truth-acquisition"></a>
-### LiDAR (Ground Truth Acquisition)
-
-A high-accuracy ground truth trajectory was acquired using LiDAR-Inertial SLAM. We use these trajectories to evaluate your SLAM algorithm.
-
-A LiDAR-Inertial mapping device containing a **Hesai XT32 LiDAR** ([Hesai website](https://www.hesaitech.com/product/xt16-32-32m/)) was rigidly attached to the Insta360 during the runs. This sensor is used only to generate the reference trajectory and its data is not included in the provided ROS 2 bags.
-
-
-<!-- TOC --><a name="camera-and-imu-calibration"></a>
-### Camera and IMU Calibration
-
-We provide camera and IMU calibration results for both the _pinhole equidistant_ camera model and the _enhanced unified_ camera model (EUCM) [here](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026/tree/main/camera_calibration). The original calibration runs are also available in the [public dataset](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026/tree/main/camera_calibration). 
-
-Calibration for the EUCM was performed using the open-source [Kalibr](https://github.com/ethz-asl/kalibr) toolbox. Since pinhole–equidistant camera model is widely supported by most existing SLAM systems, we fit its parameters to the EUCM intrinsics, as Kalibr’s implementation was unable to successfully calibrate such large-FOV fisheye cameras using this model. In addition, we have added support for EUCM to [OpenVINS](https://github.com/Hilti-Research/open_vins) so as to demonstrate that OpenVINS can process all of these recordings.
-
-
-<!-- TOC --><a name="challenge-tools-ros"></a>
-# Challenge Tools ROS
-
-We provide several tools to make it easier to work with SLAM Challenge 2026 data. These tools were developed using ROS2 Jazzy and Ubuntu 24.04.
-
-
-<!-- TOC --><a name="install-challenge-tools"></a>
-## Install Challenge Tools
-
-First, create a ROS2 workspace (if you have not created one before), and then install the challenge tools:
-
-```
-mkdir ~/ros2_ws/src -p
-cd ~/ros2_ws/src
-git clone https://github.com/Hilti-Research/hilti-trimble-slam-challenge-2026.git
-cd ~/ros2_ws
-colcon build --symlink-install
-```
-
-<!-- TOC --><a name="image-decompression-1"></a>
-## Image Decompression
-Images are stored as the `CompressedImage` type in our ROS2 bags. We provide a ready-to-run node to perform decompression:
-```
-ros2 run challenge_tools_ros image_conversion_node.py /cam0/image_raw/compressed /cam1/image_raw/compressed /cam0/image_raw /cam1/image_raw
-```
-
-<!-- TOC --><a name="image-stitching"></a>
-## Image Stitching
-We are providing the two raw fisheye images only for the challenge because stitching them into a 360° equirectangular image is not mathematically or geometrically exact and requires certain assumptions.
-
-This is because a dual-fisheye camera consists of two lenses separated by a small but non-zero baseline, meaning they do not share the same optical center. However, generating a single equirectangular image implicitly assumes a single effective viewpoint (i.e., a central projection model). Without per-pixel depth information, it is impossible to correctly reconcile the parallax between the two lenses. Projecting both fisheye images onto a common unit sphere therefore introduces geometric inconsistencies, since the rays originate from different optical centers.
-
-For people who are still interested in working with 360° equirectangular images, we provide a reference image stitching script. This script assumes a large radius for the virtual projection sphere (it is not insta360 official stitching algorithm): 
-```
-ros2 run challenge_tools_ros image_stitching.py \
-    --bag   rosbag/ \
-    --yaml  config/hilti_openvins/kalibr_imucam_chain.yaml \
-    --mask0 config/hilti_openvins/mask_cam0.png \
-    --mask1 config/hilti_openvins/mask_cam1.png \
-    --out   rosbag_pano \
-    --use-torch
-```
-
-<!-- TOC --><a name="image-inversion"></a>
-## Image Inversion
-
-The image sensors in the cameras are inverted. We have not artificially inverted the recorded images (as that would interfere with rolling shutter correction). For easier visualization we provide a simple [tool](challenge_tools_ros/runtime_helper/rotate_image_180.py) to rotate the image by 180 degrees:
-
-```
-ros2 run challenge_tools_ros rotate_image_180.py /cam0/image_raw
-```
-
-The rotated topic will be published to `/cam0/image_raw/rotated`, which you can visualize in RViz.
-
-Optional arguments:
-- Add `compressed` as second argument if the input is a `CompressedImage` topic
-- Add `gui` as third argument to show a preview window
-
-<!-- TOC --><a name="openvins-example"></a>
-## OpenVINS Example
-We have tested and configured [OpenVINS](https://github.com/rpng/open_vins), a leading open-source visual-inertial odometry system, to run on our dataset.
-
-[Here](https://www.youtube.com/watch?v=GsbvdB7MyZE) is a video demonstrating OpenVINS along side the ground truth trajectory. It illustrates the LiDAR-based GT in detail and shows how the inertial visual odometry (VO) from OpenVINS aligns with it. 
-
-Note that the OpenVINS trajectory has only been aligned to ground-truth pose at the start of the recording (approximately t = 10005 sec). The video is not explicitly localizing against the floor plan.
-
-<div align="center" style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
-  <img src="media/floor1_gt.png" alt="floor1" style="width: 48%; max-width: 520px;"/>
-  <img src="media/floor1_points.png" alt="floor1" style="width: 48%; max-width: 520px;"/>
-</div>
-
-<!-- TOC --><a name="install-openvins-with-ros2"></a>
-### Installing OpenVINS with ROS2
-We provide minimal instructions for installing OpenVINS with ROS2. More detailed information can be found in the [official documentation](https://docs.openvins.com/getting-started.html).
-
-First, install the dependencies:
-```
-sudo apt update
-sudo apt install libeigen3-dev libboost-all-dev libceres-dev
-```
-
-Then install OpenVINS:
-```
-cd ~/ros2_ws/src
-git clone https://github.com/Hilti-Research/open_vins.git
-cd ~/ros2_ws
-colcon build --symlink-install
-```
-
-
-<!-- TOC --><a name="run-openvins"></a>
-### Running OpenVINS
-
-We provide ready-to-use scripts and a calibrated configuration file for our device.
-
-In **Terminal 1**, start OpenVINS and Rviz:
-
-```
-ros2 launch challenge_tools_ros run_openvins.launch.py
-```
-
-In **Terminal 2**, publish the floor plan and subscribe to the OpenVINS output to align it with the provided initial ground-truth pose at t = 10005 sec (check [static_transform_publisher.py](challenge_tools_ros/gt_helper/static_transform_publisher.py)):
-
-```
-ros2 launch challenge_tools_ros map_server.launch.py mask:=masks_with_windows run_name:=floor_1_2025-05-05_run_1
-```
-
-In **Terminal 3**, play the bag (you can press the `space` key to pause and resume):
-
-```
-ros2 bag play floor_1/2025-05-05/run_1/rosbag -p
-```
-
-In **Terminal 4**, visualize the ground-truth trajectory if provided:
-
-```
-ros2 launch challenge_tools_ros groundtruth_server.launch.py run_name:=floor_1_2025-05-05_run_1
-```
-
-<!-- TOC --><a name="stella-vslam-example"></a>
-## Stella-VSLAM Example
-
-Stella-VSLAM is another open-source vSLAM system. It directly processes 360° equirectangular images. To install it, follow the instructions [here](https://stella-cv.readthedocs.io/en/latest/ros2_package.html).
-
-
-<!-- TOC --><a name="run-stella-vslam"></a>
-### Run Stella-VSLAM
-
-First, stitch the fisheye images into 360° equirectangular images using either our [reference script](challenge_tools_ros/bag_helper/image_stitching.py) or your own stitching algorithm.
-
-In **Terminal 1**, start Stella-VSLAM:
-
-```
-ros2 launch challenge_tools_ros run_stella_vslam.launch.py
-```
-
-In **Terminal 2**, play the ros bag:
-
-```
-ros2 bag play /path/to/stitched/ros2/bag/folder -p --rate 0.5
-```
-
-An example of Stella-VSLAM running on stitched images is shown below:
-<div align="center">
-  <img src="media/floor2_stella_vslam_stitch.png" alt="floor1_stella_vslam_stitch" width="50%"/>
-</div>
-
-**Known Issue:** Sometimes the Stella-VSLAM ROS wrapper may fail to properly subscribe to image messages. If this happens, run the `image_conversion_node` in a separate terminal instead of including it in the launch file. Then repeatedly terminate and relaunch the node until the image is displayed properly.
+<a name="challenge-homepage-evaluation-server"></a>
+The [official challenge homepage](https://hilti-trimble-challenge.com) provides evaluation server and prize information. See the [evaluation guide](docs/challenge-evaluation.md) for tasks, submission requirements, and scoring.
+
+## Start Here
+
+1. **Get a first run working:** [download a sequence](docs/dataset.md#download-a-recording), then [install the ROS tools](docs/challenge-tools.md#install-challenge-tools).
+2. **Run a baseline:** use [OpenVINS](docs/openvins.md) with the original fisheye images, or [Stella-VSLAM](docs/stella-vslam.md) with stitched panoramas.
+3. **Evaluate your trajectory:** check the [ground truth conventions](docs/ground-truth.md) and [submission requirements](docs/challenge-evaluation.md#what-to-deliver).
+
+## Documentation
+
+| I want to… | Read |
+| --- | --- |
+| Download data, compare sequence conditions, and preview trajectories | [Dataset and Sequence Guide](docs/dataset.md) |
+| Use floorplans for localization | [Floorplans](docs/floorplans.md) |
+| Understand ROS topics, timestamps, and calibration | [Sensors and calibration](docs/sensors.md) |
+| Use reference trajectories and initial poses | [Ground truth](docs/ground-truth.md) |
+| Install the tools and process images | [ROS image tools](docs/challenge-tools.md) |
+| Run visual-inertial odometry | [OpenVINS example](docs/openvins.md) |
+| Run SLAM on panoramic images | [Stella-VSLAM example](docs/stella-vslam.md) |
+| Prepare a submission and understand scores | [Challenge and evaluation](docs/challenge-evaluation.md) |
+
+For questions or problems, open an [issue](https://github.com/Hilti-Research/hilti-trimble-slam-challenge-2026/issues).
+
+## News
+
+- **[2026-09-21]** ⏱️ Added an explanation of [sensor synchronization](docs/ground-truth.md#sensors-synchronization) in the ground truth collection device.
+- **[2026-08-06]** 🤗 Released the dataset on [Hugging Face](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026/tree/main).
+- **[2026-06-29]** 🔎 Added the [detailed sequence categorization](docs/dataset.md#preview-and-choose-a-sequence).
+
+<details>
+<summary>Earlier updates</summary>
+
+- **[2026-06-16]** ⚓ Released the [ground truth](groundtruth/) for all the sequences.
+- **[2026-06-12]** 🏆 Published the Challenge's [leaderboard](https://hilti-challenge.com/leaderboard-2026).
+- **[2026-03-05]** ℹ️ Added rolling shutter [specifications](config/hilti_openvins/rs_config.yaml).
+- **[2026-03-03]** 📐 Added floor plans in `dxf` format.
+  > **Note:** These floor plans are not officially registered.
+- **[2026-02-27]** 📷 Updated camera parameters and intrinsic calibration.
+- **[2026-02-16]** 🖼️ Introduced [image stitching script](challenge_tools_ros/bag_helper/image_stitching.py) for dataset post-processing.
+- **[2026-02-16]** 🎨 Added custom image encoding options in `image_conversion_node`.
+- **[2026-02-03]** 🗺️ Fixed `floor_UG1_2025-05-19_run_1` static transformation.
+
+</details>
