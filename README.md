@@ -35,12 +35,17 @@
 The accompanying paper has been accepted for publication in **IEEE Robotics and Automation Letters**. If you find this dataset useful, please consider giving it a ⭐ and citing it in your work.
 
 ```bibtex
-@article{slamchallenge2026,
-   title={{Hilti}-{Trimble}-{Oxford} Dataset: 360 Visual-Inertial Benchmark with Floor Plan Priors for {SLAM} and Localization},
-   author={Centanni, Samuele and Zhang, Yuhao and Tao, Yifu and Kindle, Julien and Neuhaus, Frank and Koß, Tilman and Patel, Aryaman and Helmberger, Michael and Szymańska, Emilia and Gräber, Torben and Fallon, Maurice},
-   journal={arXiv preprint arXiv:2607.06464},
-   year={2026}
+@ARTICLE{slamchallenge2026,
+  author={Centanni, Samuele and Zhang, Yuhao and Tao, Yifu and Kindle, Julien and Neuhaus, Frank and Ko\ss, Tilman and Patel, Aryaman and Helmberger, Michael and Szyma\'nska, Emilia and Gr\"aber, Torben and Fallon, Maurice},
+  title={Hilti-Trimble-Oxford Dataset: 360 Visual-Inertial Benchmark With Floor Plan Priors for SLAM and Localization},
+  journal={IEEE Robotics and Automation Letters}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-8},
+  doi={10.1109/LRA.2026.3747660}
 }
+
 ```
 
 <a name="introduction-360-visual-inertial-slam-challenge-with-additional-building-floorplans"></a>
