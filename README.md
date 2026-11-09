@@ -40,9 +40,9 @@ The accompanying paper has been accepted for publication in **IEEE Robotics and 
   title={Hilti-Trimble-Oxford Dataset: 360 Visual-Inertial Benchmark With Floor Plan Priors for SLAM and Localization},
   journal={IEEE Robotics and Automation Letters}, 
   year={2026},
-  volume={},
-  number={},
-  pages={1-8},
+  volume={11},
+  number={12},
+  pages={14676-14683},
   doi={10.1109/LRA.2026.3747660}
 }
 
