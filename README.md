@@ -20,6 +20,7 @@
 </p>
 
 [<img src="https://img.shields.io/badge/Home%20Page--red?style=social&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iIzQyODVGNCIgZD0iTTEyIDMgMiAxMmgzdjloNXYtNmg0djZoNXYtOWgzTDEyIDN6Ii8%2BPC9zdmc%2B" alt="Home Page">](https://hilti-challenge.com/dataset-2026)
+[<img src="https://img.shields.io/badge/IEEE%20Xplore--00629B?style=social&logo=ieee" alt="IEEE Xplore">](https://ieeexplore.ieee.org/document/11753968)
 [<img src="https://img.shields.io/badge/arXiv--b31b1b?style=social&logo=arxiv" alt="arXiv">](https://arxiv.org/abs/2607.06464)
 [<img src="https://img.shields.io/badge/Hugging%20Face--yellow?style=social&logo=huggingface&logoColor=FFD21E" alt="Hugging Face Dataset">](https://huggingface.co/datasets/Hilti-Research/hilti-trimble-slam-challenge-2026/tree/main)
 [<img src="https://img.shields.io/badge/YouTube--red?style=social&logo=youtube" alt="YouTube">](https://www.youtube.com/playlist?list=PLIbIX8ez6UWS0N2A-lTmwYnmhMPQs8IYU)
@@ -32,17 +33,17 @@
 
 </div>
 
-The accompanying paper has been accepted for publication in **IEEE Robotics and Automation Letters**. If you find this dataset useful, please consider giving it a ⭐ and citing it in your work.
+The accompanying paper has been published in **IEEE Robotics and Automation Letters**. If you find this dataset useful, please consider giving it a ⭐ and citing it in your work.
 
 ```bibtex
-@ARTICLE{slamchallenge2026,
+@article{slamchallenge2026,
   author={Centanni, Samuele and Zhang, Yuhao and Tao, Yifu and Kindle, Julien and Neuhaus, Frank and Ko\ss, Tilman and Patel, Aryaman and Helmberger, Michael and Szyma\'nska, Emilia and Gr\"aber, Torben and Fallon, Maurice},
-  title={Hilti-Trimble-Oxford Dataset: 360 Visual-Inertial Benchmark With Floor Plan Priors for SLAM and Localization},
-  journal={IEEE Robotics and Automation Letters}, 
-  year={2026},
+  title={{Hilti}-{Trimble}-{Oxford} Dataset: 360 Visual-Inertial Benchmark With Floor Plan Priors for {SLAM} and Localization},
+  journal={IEEE Robotics and Automation Letters},
   volume={11},
   number={12},
-  pages={14676-14683},
+  pages={14676--14683},
+  year={2026},
   doi={10.1109/LRA.2026.3747660}
 }
 
@@ -91,7 +92,7 @@ The [official challenge homepage](https://hilti-trimble-challenge.com) provides 
 
 | I want to… | Read |
 | --- | --- |
-| Download data, compare sequence conditions, and preview trajectories | [Dataset and Sequence Guide](docs/dataset.md) |
+| Download data, compare sequence conditions, and preview trajectories | [Dataset and sequence guide](docs/dataset.md) |
 | Use floorplans for localization | [Floorplans](docs/floorplans.md) |
 | Understand ROS topics, timestamps, and calibration | [Sensors and calibration](docs/sensors.md) |
 | Use reference trajectories and initial poses | [Ground truth](docs/ground-truth.md) |
